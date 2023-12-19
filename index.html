@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transición en HTML</title>
+    <style>
+        /* Definir el estilo inicial del elemento */
+        .caja {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            transition: width 1s, height 1s, background-color 1s; /* Definir la transición para width, height y background-color */
+        }
+
+        /* Cambiar el estilo al pasar el ratón por encima del elemento */
+        .caja:hover {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="caja"></div>
+</body>
+</html>
