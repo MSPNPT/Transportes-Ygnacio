@@ -3,23 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transición en HTML</title>
+    <title>Carrusel de Imágenes</title>
     <style>
-        /* Definir el estilo inicial del elemento */
-        .caja {
-            width: 100px;
-            height: 100px;
-            background-color: blue;
-            transition: width 1s, height 1s, background-color 1s; /* Definir la transición para width, height y background-color */
+        /* Estilo para el contenedor del carrusel */
+        .carrusel-container {
+            width: 300px; /* Ajusta el ancho según tus necesidades */
+            overflow: hidden;
         }
 
-        /* Cambiar el estilo al pasar el ratón por encima del elemento */
-        .caja:hover {
-            width: 200px;
-            height: 200px;
-            background-color: red;
+        /* Estilo para el contenedor de las imágenes */
+        .carrusel {
+            display: flex; /* Hace que las imágenes se muestren en línea */
+            transition: transform 1s ease-in-out; /* Transición para el efecto de deslizamiento */
+        }
+
+        /* Estilo para cada imagen */
+        .carrusel img {
+            width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
         }
     </style>
+</head>
+<body>
+
+<div class="carrusel-container">
+    <div class="carrusel">
+        <!-- Coloca aquí tus imágenes -->
+        <img src="imagen1.jpg" alt="Imagen 1">
+        <img src="imagen2.jpg" alt="Imagen 2">
+        <img src="imagen3.jpg" alt="Imagen 3">
+        <!-- Repite las imágenes según sea necesario -->
+        <img src="imagen1.jpg" alt="Imagen 1">
+    </div>
+</div>
+
+<script>
+    // JavaScript para implementar el efecto de deslizamiento automático
+    const carrusel = document.querySelector('.carrusel');
+    let currentPosition = 0;
+
+    function nextSlide() {
+        currentPosition -= 100; // Ancho de cada imagen
+        if (currentPosition < -((carrusel.children.length - 1) * 100)) {
+            currentPosition = 0;
+        }
+        carrusel.style.transform = `translateX(${currentPosition}%)`;
+    }
+
+    setInterval(nextSlide, 3000); // Cambiar la imagen cada 3 segundos (ajusta según sea necesario)
+</script>
+
+</body>
+</html>
 </head>
 <body>
     <div class="caja"></div>
