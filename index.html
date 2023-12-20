@@ -1,61 +1,85 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrusel de Imágenes</title>
-    <style>
-        /* Estilo para el contenedor del carrusel */
-        .carrusel-container {
-            width: 300px; /* Ajusta el ancho según tus necesidades */
-            overflow: hidden;
-        }
-
-        /* Estilo para el contenedor de las imágenes */
-        .carrusel {
-            display: flex; /* Hace que las imágenes se muestren en línea */
-            transition: transform 1s ease-in-out; /* Transición para el efecto de deslizamiento */
-        }
-
-        /* Estilo para cada imagen */
-        .carrusel img {
-            width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
-        }
-    </style>
-</head>
-<body>
-
-<div class="carrusel-container">
-    <div class="carrusel">
-        <!-- Coloca aquí tus imágenes -->
-        <img src="imagen1.jpg" alt="Imagen 1">
-        <img src="imagen2.jpg" alt="Imagen 2">
-        <img src="imagen3.jpg" alt="Imagen 3">
-        <!-- Repite las imágenes según sea necesario -->
-        <img src="imagen1.jpg" alt="Imagen 1">
-    </div>
-</div>
-
-<script>
-    // JavaScript para implementar el efecto de deslizamiento automático
-    const carrusel = document.querySelector('.carrusel');
-    let currentPosition = 0;
-
-    function nextSlide() {
-        currentPosition -= 100; // Ancho de cada imagen
-        if (currentPosition < -((carrusel.children.length - 1) * 100)) {
-            currentPosition = 0;
-        }
-        carrusel.style.transform = `translateX(${currentPosition}%)`;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bike Shop</title>
+  <style>
+    /* Estilos CSS para mejorar la apariencia (puedes personalizar según tus necesidades) */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
     }
 
-    setInterval(nextSlide, 3000); // Cambiar la imagen cada 3 segundos (ajusta según sea necesario)
-</script>
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1em;
+    }
 
-</body>
-</html>
+    section {
+      max-width: 800px;
+      margin: 2em auto;
+      padding: 1em;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    p {
+      line-height: 1.6;
+      color: #666;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #f00;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 5px;
+    }
+  </style>
 </head>
 <body>
-    <div class="caja"></div>
+  <header>
+    <h1>Bike Shop</h1>
+  </header>
+
+  <section>
+    <h2>Categorías de Bicicletas</h2>
+    <ul>
+      <li><a href="aro26.html">Aro 26</a></li>
+      <li><a href="aro26/aluminio.html">Aro 26 de Aluminio</a></li>
+      <!-- Agrega más categorías según sea necesario -->
+    </ul>
+  </section>
+
+  <section>
+    <h2>Bicicletas Aro 26</h2>
+    <p>¡Descubre nuestra colección de bicicletas aro 26!</p>
+    <!-- Contenido específico para bicicletas aro 26 -->
+  </section>
+
+  <section>
+    <h2>Bicicletas Aro 26 de Aluminio</h2>
+    <p>Explora nuestras bicicletas aro 26 de aluminio, ligeras y duraderas.</p>
+    <!-- Contenido específico para bicicletas aro 26 de aluminio -->
+  </section>
 </body>
 </html>
