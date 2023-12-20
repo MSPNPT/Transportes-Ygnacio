@@ -5,7 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mi Primera Página con JavaScript</title>
   <script>
-    // Tu código JavaScript va aquí
+    // Definir una función para sumar dos números
+function sumar(a, b) {
+  return a + b;
+}
+
+// Imprimir el resultado de la suma
+var resultado = sumar(5, 10);
+console.log("La suma es: " + resultado);
+
+// Usar un bucle for para imprimir números del 1 al 5
+for (var i = 1; i <= 5; i++) {
+  console.log(i);
+}
+
+// Definir un objeto simple
+var persona = {
+  nombre: "Juan",
+  edad: 25,
+  decirHola: function() {
+    console.log("Hola, soy " + this.nombre + " y tengo " + this.edad + " años.");
+  }
+};
+
+// Llamar al método decirHola del objeto persona
+persona.decirHola();// Tu código JavaScript va aquí
   </script>
 </head>
 <body>
