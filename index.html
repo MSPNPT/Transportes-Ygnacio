@@ -1,38 +1,63 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Primera Página con JavaScript</title>
-  <script>
-    // Definir una función para sumar dos números
-function sumar(a, b) {
-  return a + b;
-}
+  <title>Calculadora de Suma</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
 
-// Imprimir el resultado de la suma
-var resultado = sumar(5, 10);
-console.log("La suma es: " + resultado);
+    input {
+      padding: 10px;
+      font-size: 16px;
+    }
 
-// Usar un bucle for para imprimir números del 1 al 5
-for (var i = 1; i <= 5; i++) {
-  console.log(i);
-}
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
 
-// Definir un objeto simple
-var persona = {
-  nombre: "Juan",
-  edad: 25,
-  decirHola: function() {
-    console.log("Hola, soy " + this.nombre + " y tengo " + this.edad + " años.");
-  }
-};
-
-// Llamar al método decirHola del objeto persona
-persona.decirHola();// Tu código JavaScript va aquí
-  </script>
+    #resultado {
+      font-size: 24px;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-  <!-- Contenido HTML de tu página -->
+
+  <h2>Calculadora de Suma</h2>
+
+  <input type="number" id="numero1" placeholder="Ingrese el primer número">
+  <input type="number" id="numero2" placeholder="Ingrese el segundo número">
+
+  <button onclick="sumar()">Sumar</button>
+
+  <div id="resultado"></div>
+
+  <script>
+    function sumar() {
+      // Obtener los valores de los input
+      var num1 = parseFloat(document.getElementById('numero1').value);
+      var num2 = parseFloat(document.getElementById('numero2').value);
+
+      // Verificar si los valores son números válidos
+      if (isNaN(num1) || isNaN(num2)) {
+        alert("Por favor, ingrese números válidos");
+        return;
+      }
+
+      // Realizar la suma
+      var resultado = num1 + num2;
+
+      // Mostrar el resultado
+      document.getElementById('resultado').innerHTML = "Resultado: " + resultado;
+    }
+  </script>
+
 </body>
 </html>
