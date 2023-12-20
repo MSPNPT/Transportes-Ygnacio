@@ -30,12 +30,13 @@
 </head>
 <body>
 
-  <h2>Calculadora de Suma</h2>
+  <h2>EMITIR FACTURA</h2>
 
   <input type="number" id="numero1" placeholder="Ingrese el primer número">
-  <input type="number" id="numero2" placeholder="Ingrese el segundo número">
+  
+  <input type="text" id="detalle1" placeholder="Ingrese el concepto">
 
-  <button onclick="multiplicar()">multiplicar</button>
+  <button onclick="multiplicar()">emitir</button>
 
   <div id="resultado"></div>
 
@@ -43,16 +44,15 @@
     function multiplicar() {
       // Obtener los valores de los input
       var num1 = parseFloat(document.getElementById('numero1').value);
-      var num2 = parseFloat(document.getElementById('numero2').value);
 
       // Verificar si los valores son números válidos
-      if (isNaN(num1) || isNaN(num2)) {
+      if (isNaN(num1) ) {
         alert("Por favor, ingrese números válidos");
         return;
       }
 
       // Realizar la multiplicacion
-      var resultado = num1 * num2;
+      var resultado = num1 * 0.18;
 
       // Mostrar el resultado
       document.getElementById('resultado').innerHTML = "Resultado: " + resultado;
