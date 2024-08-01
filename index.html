@@ -3,789 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taxi Services</title>
+    <title>Servicios de Taxi</title>
     <style>
-        .nav {
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
             background-color: #333;
             color: #fff;
-            padding: 1em;
+            padding: 10px 20px;
             text-align: center;
         }
-        .nav a {
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
             color: #fff;
             text-decoration: none;
-            margin: 0 1em;
         }
-        .content {
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .services {
             display: flex;
             flex-wrap: wrap;
-            justify-content: center;
+            gap: 20px;
         }
-        .item {
-            border: 1px solid #ddd;
-            margin: 1em;
-            padding: 1em;
-            width: calc(33.33% - 2em);
+        .service {
+            flex: 1;
+            min-width: 200px;
+            padding: 20px;
+            background-color: #e2e2e2;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        .item img {
+        .service h3 {
+            margin-top: 0;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 20px;
+            position: fixed;
             width: 100%;
-            height: 150px;
-            object-fit: cover;
-        }
-    </
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-        .nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1em;
-        }
-        .content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .item {
-            border: 1px solid #ddd;
-            margin: 1em;
-            padding: 1em;
-            width: calc(33.33% - 2em);
-        }
-        .item img {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-        .nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1em;
-        }
-        .content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .item {
-            border: 1px solid #ddd;
-            margin: 1em;
-            padding: 1em;
-            width: calc(33.33% - 2em);
-        }
-        .item img {
-            width: 100%;
-            height: 150px;
-            object
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-        .nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1em;
-        }
-        .content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .item {
-            border: 1px solid #ddd;
-            margin: 1em;
-            padding: 1em;
-            width: calc(33.33% - 2em);
-        }
-        .item img {
-            width: 100%;
-            height: 150px
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-        .nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1em;
-        }
-        .content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .item {
-            border: 1px solid #ddd;
-            margin: 1em;
-            padding: 1em;
-            width: calc(33.33% - 2em);
-        }
-        .item img {
-            width: 100%;
-            height
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-        .nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1em;
-        }
-        .content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .item {
-            border: 1px solid #ddd;
-            margin: 1em;
-            padding: 1em;
-            width: calc(33.33% - 2em);
-        }
-        .item img {
-            width:
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-        .nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1em;
-        }
-        .content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .item {
-            border: 1px solid #ddd;
-            margin: 1em;
-            padding: 1em;
-            width: calc(33.33% - 2em);
-        }
-        .item img
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-        .nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1em;
-        }
-        .content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .item {
-            border: 1px solid #ddd;
-            margin: 1em;
-            padding: 1em;
-            width: calc(33.33% - 2em);
-        }
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-        .nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1em;
-        }
-        .content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .item {
-            border: 1px solid #ddd;
-            margin: 1em;
-            padding: 1em;
-            width: calc(33.33% - 2em
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-        .nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1em;
-        }
-        .content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .item {
-            border: 1px solid #ddd;
-            margin: 1em;
-            padding: 1em;
-            width: calc(33.33%
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-        .nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1em;
-        }
-        .content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .item {
-            border: 1px solid #ddd;
-            margin: 1em;
-            padding: 1em;
-            width: calc(33.
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-        .nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1em;
-        }
-        .content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .item {
-            border: 1px solid #ddd;
-            margin: 1em;
-            padding: 1em;
-            width: calc
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-        .nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1em;
-        }
-        .content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .item {
-            border: 1px solid #ddd;
-            margin: 1em;
-            padding: 1em;
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-        .nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1em;
-        }
-        .content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .item {
-            border: 1px solid #ddd;
-            margin: 1em;
-            padding:
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-        .nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1em;
-        }
-        .content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .item {
-            border: 1px solid #ddd;
-            margin: 1em;
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-        .nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1em;
-        }
-        .content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .item {
-            border: 1px solid #ddd;
-            margin:
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-        .nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1em;
-        }
-        .content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .item {
-            border: 1px solid #ddd;
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-        .nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1em;
-        }
-        .content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .item {
-            border: 1px
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-        .nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1em;
-        }
-        .content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .item {
-            border:
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-        .nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1em;
-        }
-        .content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .item {
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-        .nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1em;
-        }
-        .content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-        .nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1em;
-        }
-        .content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-        .nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1em;
-        }
-        .content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-        .nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1em;
-        }
-        .content {
-            display: flex;
-            flex-wrap: wrap;
-            justify
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-        .nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1em;
-        }
-        .content {
-            display: flex;
-            flex-wrap: wrap;
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-        .nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1em;
-        }
-        .content {
-            display: flex;
-            flex-wrap:
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-        .nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1em;
-        }
-        .content {
-            display: flex;
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-        .nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1em;
-        }
-        .content {
-            display
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-        .nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1em;
-        }
-        .content
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-        .nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1em;
-        }
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-        .nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1em
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-        .nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-        .nav a {
-            color: #fff;
-            text-decoration: none;
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-        .nav a {
-            color: #fff;
-            text-decoration: none
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-        .nav a {
-            color: #fff;
-            text
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-        .nav a {
-            color: #fff
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-        .nav a {
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-        .nav
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1em
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding:
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding
-        .nav {
-            background-color: #333;
-            color: #fff;
-        .nav {
-            background-color: #333;
-            color: #
-        .nav {
-            background-color: #333;
-        .nav {
-            background-color: #
-        .nav {
-            background
-        .nav {
-            background-color: #333;
-            color: #fff;
-            padding: 1em;
-            text-align: center;
-        }
-        .nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 1em;
-        }
-        .content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .item {
-            border: 1px solid #ddd;
-            margin: 1em;
-            padding: 1em;
-            width: calc(33.33% - 2em);
-        }
-        .item img {
-            width: 100%;
-            height: 150px;
-            object-fit: cover;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
-    <nav class="nav">
-        <a href="#todos">Todos</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#productos">Productos</a>
-    </nav>
-    <div class="content" id="todos">
-        <!-- 12 servicios -->
-        <div class="item">
-            <img src="servicio1.jpg" alt="Servicio 1">
-            <h2>Servicio 1</h2>
-            <p>Precio: S/ 10.00</p>
-        </div>
-        <!-- ... -->
-        <div class="item">
-            <img src="servicio12.jpg" alt="Servicio 12">
-            <h2>Servicio 12</h2>
-            <p>Precio: S/ 50.00</p>
-        </div>
-        <!-- 12 productos -->
-        <div class="item">
-            <img src="producto1.jpg" alt="Producto 1">
-            <h2>Producto 1</h2>
-            <p>Precio: S/ 20.00</p>
-        </div>
-        <!-- ... -->
-        <div class="item">
-            <img src="producto12.jpg" alt="Producto 12">
-            <h2>Producto 12</h2>
-            <p>Precio: S/ 100.00</p>
-        </div>
-    </div>
-    <div class="content" id="servicios" style="display: none;">
-        <!-- 12 servicios -->
-        <div class="item">
-            <img src="servicio1.jpg" alt="Servicio 1">
-            <h2>Servicio 1</h2>
-            <p>Precio: S/ 10.00</p>
-        </div>
-        <!-- ... -->
-        <div class="item">
-            <img src="servicio12.jpg" alt="Servicio 12">
-            <h2>Servicio 12</h2>
-            <p>Precio: S/ 50.00</p>
-        </div>
-    </div>
-    <div class="content" id="productos" style="display: none;">
-        <!-- 12 productos -->
-        <div class="item">
-            <img src="producto1.jpg" alt="Producto 1">
-            <h2>Producto 1</h2>
-            <p>Precio: S/ 20.00</p>
-        </div>
-        <!-- ... -->
-        <div class="item">
-            <img src="producto12.jpg" alt="Producto 12">
-            <h2>Producto 12</h2>
-            <p>Precio: S/ 100.00</p>
-        </div>
-    </div>
-    <script>
-        document.querySelectorAll('.nav a').forEach(a => {
-            a.addEventListener('click', e => {
-                e.preventDefault();
-                document.querySelectorAll('.content').forEach(c => c.style.display = 'none');
-                document.querySelector(e.target.hash).style.display = 'flex';
-            });
-        });
+    <header>
+        <h1>Servicios de Taxi</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
     
-        document.querySelectorAll('.nav a').forEach(a => {
-            a.addEventListener('click', e => {
-                e.preventDefault</script>
+    <div class="container" id="inicio">
+        <h2>Bienvenido a nuestra empresa de taxis</h2>
+        <p>Ofrecemos un servicio de taxi de alta calidad con opciones para adaptarnos a tus necesidades. Conoce nuestros servicios y precios a continuación.</p>
+    </div>
+    
+    <div class="container" id="servicios">
+        <h2>Servicios y Precios</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Taxi Regular</h3>
+                <p>Un servicio de taxi estándar con precios accesibles.</p>
+                <p><strong>Precio:</strong> $10 por cada 5 km</p>
+            </div>
+            <div class="service">
+                <h3>Taxi de Lujo</h3>
+                <p>Disfruta de un viaje cómodo y elegante en uno de nuestros vehículos de lujo.</p>
+                <p><strong>Precio:</strong> $25 por cada 5 km</p>
+            </div>
+            <div class="service">
+                <h3>Taxi al Aeropuerto</h3>
+                <p>Servicio directo al aeropuerto con tarifas planas.</p>
+                <p><strong>Precio:</strong> $30 (ida) / $55 (ida y vuelta)</p>
+            </div>
+            <div class="service">
+                <h3>Taxi para Eventos</h3>
+                <p>Transporte cómodo para eventos especiales como bodas o fiestas.</p>
+                <p><strong>Precio:</strong> $40 por 3 horas</p>
+            </div>
+            <div class="service">
+                <h3>Taxi Familiar</h3>
+                <p>Vehículo espacioso ideal para familias o grupos grandes.</p>
+                <p><strong>Precio:</strong> $20 por cada 5 km</p>
+            </div>
+            <div class="service">
+                <h3>Taxi 24 Horas</h3>
+                <p>Servicio disponible las 24 horas del día, los 7 días de la semana.</p>
+                <p><strong>Precio:</strong> $15 por cada 5 km</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container" id="contacto">
+        <h2>Contacto</h2>
+        <p>Para consultas o reservas, por favor contáctanos al:</p>
+        <p><strong>Teléfono:</strong> +123 456 7890</p>
+        <p><strong>Correo Electrónico:</strong> contacto@serviciosdetaxi.com</p>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Servicios de Taxi. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
