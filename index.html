@@ -3,3363 +3,1627 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Tienda de Productos</title>
+	<title>Taxi Service</title>
 	<style>
-		/* Estilos básicos */
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
+			background-color: #333;
 			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
+			padding: 20px;
+			text-align: center;
 		}
-		.categorias button:hover {
-			background-color: #3e8e41;
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
 		}
-		.productos {
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20px;
+		}
+		.services {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
 		}
-		.producto {
-			margin: 20px;
+		.service {
+			background-color: #f7f7f7;
 			padding: 20px;
-			border: 1px solid #ddd;
-			border-radius: 10px;
+			margin: 20px;
+			width: calc(33.33% - 20px);
 			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 		}
-		.producto img {
-			width: 100%;
-			height: 150px;
-			object-fit: cover;
-			border-radius: 10px 10px 0 0;
-		}
-		.producto h2 {
+		.service h2 {
 			margin-top: 0;
 		}
-		.producto p {
-			margin-bottom: 20px;
-		}
-		.botones {
-			display: flex;
-			justify-content: space-between;
-		}
-		.botones button {
-			background-color: #4CAF50;
-			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-		}
-		.botones button:hover {
-			background-color: #3e8e41;
-		}
-	
-		/* Estilos básicos */
+	</
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
+			background-color: #333;
 			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
+			padding: 20px;
+			text-align: center;
 		}
-		.categorias button:hover {
-			background-color: #3e8e41;
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
 		}
-		.productos {
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20px;
+		}
+		.services {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
 		}
-		.producto {
-			margin: 20px;
+		.service {
+			background-color: #f7f7f7;
 			padding: 20px;
-			border: 1px solid #ddd;
-			border-radius: 10px;
+			margin: 20px;
+			width: calc(33.33% - 20px);
 			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 		}
-		.producto img {
-			width: 100%;
-			height: 150px;
-			object-fit: cover;
-			border-radius: 10px 10px 0 0;
-		}
-		.producto h2 {
+		.service h2 {
 			margin-top: 0;
-		}
-		.producto p {
-			margin-bottom: 20px;
-		}
-		.botones {
-			display: flex;
-			justify-content: space-between;
-		}
-		.botones button {
-			background-color: #4CAF50;
-			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-		}
-		.botones button:hover {
-			background-color: #3e8e
-		/* Estilos básicos */
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
+			background-color: #333;
 			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
+			padding: 20px;
+			text-align: center;
 		}
-		.categorias button:hover {
-			background-color: #3e8e41;
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
 		}
-		.productos {
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20px;
+		}
+		.services {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
 		}
-		.producto {
-			margin: 20px;
+		.service {
+			background-color: #f7f7f7;
 			padding: 20px;
-			border: 1px solid #ddd;
-			border-radius: 10px;
+			margin: 20px;
+			width: calc(33.33% - 20px);
 			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 		}
-		.producto img {
-			width: 100%;
-			height: 150px;
-			object-fit: cover;
-			border-radius: 10px 10px 0 0;
-		}
-		.producto h2 {
-			margin-top: 0;
-		}
-		.producto p {
-			margin-bottom: 20px;
-		}
-		.botones {
-			display: flex;
-			justify-content: space-between;
-		}
-		.botones button {
-			background-color: #4CAF50;
-			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-		}
-		.botones button:hover
-		/* Estilos básicos */
+		.service h2 {
+			margin-top
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
+			background-color: #333;
 			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
+			padding: 20px;
+			text-align: center;
 		}
-		.categorias button:hover {
-			background-color: #3e8e41;
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
 		}
-		.productos {
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20px;
+		}
+		.services {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
 		}
-		.producto {
-			margin: 20px;
+		.service {
+			background-color: #f7f7f7;
 			padding: 20px;
-			border: 1px solid #ddd;
-			border-radius: 10px;
+			margin: 20px;
+			width: calc(33.33% - 20px);
 			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 		}
-		.producto img {
-			width: 100%;
-			height: 150px;
-			object-fit: cover;
-			border-radius: 10px 10px 0 0;
-		}
-		.producto h2 {
-			margin-top: 0;
-		}
-		.producto p {
-			margin-bottom: 20px;
-		}
-		.botones {
-			display: flex;
-			justify-content: space-between;
-		}
-		.botones button {
-			background-color: #4CAF50;
-			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer
-		/* Estilos básicos */
+		.service h2
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
+			background-color: #333;
 			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
+			padding: 20px;
+			text-align: center;
 		}
-		.categorias button:hover {
-			background-color: #3e8e41;
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
 		}
-		.productos {
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20px;
+		}
+		.services {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
 		}
-		.producto {
-			margin: 20px;
+		.service {
+			background-color: #f7f7f7;
 			padding: 20px;
-			border: 1px solid #ddd;
-			border-radius: 10px;
+			margin: 20px;
+			width: calc(33.33% - 20px);
 			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 		}
-		.producto img {
-			width: 100%;
-			height: 150px;
-			object-fit: cover;
-			border-radius: 10px 10px 0 0;
-		}
-		.producto h2 {
-			margin-top: 0;
-		}
-		.producto p {
-			margin-bottom: 20px;
-		}
-		.botones {
-			display: flex;
-			justify-content: space-between;
-		}
-		.botones button {
-			background-color: #4CAF50;
-			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border
-		/* Estilos básicos */
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
+			background-color: #333;
 			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
+			padding: 20px;
+			text-align: center;
 		}
-		.categorias button:hover {
-			background-color: #3e8e41;
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
 		}
-		.productos {
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20px;
+		}
+		.services {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
 		}
-		.producto {
-			margin: 20px;
+		.service {
+			background-color: #f7f7f7;
 			padding: 20px;
-			border: 1px solid #ddd;
-			border-radius: 10px;
+			margin: 20px;
+			width: calc(33.33% - 20px);
 			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-		}
-		.producto img {
-			width: 100%;
-			height: 150px;
-			object-fit: cover;
-			border-radius: 10px 10px 0 0;
-		}
-		.producto h2 {
-			margin-top: 0;
-		}
-		.producto p {
-			margin-bottom: 20px;
-		}
-		.botones {
-			display: flex;
-			justify-content: space-between;
-		}
-		.botones button {
-			background-color: #4CAF50;
-			color: #fff;
-			border: none;
-			padding
-		/* Estilos básicos */
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
+			background-color: #333;
 			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
+			padding: 20px;
+			text-align: center;
 		}
-		.categorias button:hover {
-			background-color: #3e8e41;
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
 		}
-		.productos {
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20px;
+		}
+		.services {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
 		}
-		.producto {
+		.service {
+			background-color: #f7f7f7;
+			padding: 20px;
 			margin: 20px;
-			padding: 20px;
-			border: 1px solid #ddd;
-			border-radius: 10px;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-		}
-		.producto img {
-			width: 100%;
-			height: 150px;
-			object-fit: cover;
-			border-radius: 10px 10px 0 0;
-		}
-		.producto h2 {
-			margin-top: 0;
-		}
-		.producto p {
-			margin-bottom: 20px;
-		}
-		.botones {
-			display: flex;
-			justify-content: space-between;
-		}
-		.botones button {
-			background-color: #4CAF50;
-			color:
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
-			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
-		}
-		.categorias button:hover {
-			background-color: #3e8e41;
-		}
-		.productos {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-		}
-		.producto {
-			margin: 20px;
-			padding: 20px;
-			border: 1px solid #ddd;
-			border-radius: 10px;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-		}
-		.producto img {
-			width: 100%;
-			height: 150px;
-			object-fit: cover;
-			border-radius: 10px 10px 0 0;
-		}
-		.producto h2 {
-			margin-top: 0;
-		}
-		.producto p {
-			margin-bottom: 20px;
-		}
-		.botones {
-			display: flex;
-			justify-content: space-between;
-		}
-		.botones button {
-			background
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
-			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
-		}
-		.categorias button:hover {
-			background-color: #3e8e41;
-		}
-		.productos {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-		}
-		.producto {
-			margin: 20px;
-			padding: 20px;
-			border: 1px solid #ddd;
-			border-radius: 10px;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-		}
-		.producto img {
-			width: 100%;
-			height: 150px;
-			object-fit: cover;
-			border-radius: 10px 10px 0 0;
-		}
-		.producto h2 {
-			margin-top: 0;
-		}
-		.producto p {
-			margin-bottom: 20px;
-		}
-		.botones {
-			display: flex;
-			justify-content: space-between;
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
-			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
-		}
-		.categorias button:hover {
-			background-color: #3e8e41;
-		}
-		.productos {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-		}
-		.producto {
-			margin: 20px;
-			padding: 20px;
-			border: 1px solid #ddd;
-			border-radius: 10px;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-		}
-		.producto img {
-			width: 100%;
-			height: 150px;
-			object-fit: cover;
-			border-radius: 10px 10px 0 0;
-		}
-		.producto h2 {
-			margin-top: 0;
-		}
-		.producto p {
-			margin-bottom: 20px;
-		}
-		.botones {
-			display: flex
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
-			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
-		}
-		.categorias button:hover {
-			background-color: #3e8e41;
-		}
-		.productos {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-		}
-		.producto {
-			margin: 20px;
-			padding: 20px;
-			border: 1px solid #ddd;
-			border-radius: 10px;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-		}
-		.producto img {
-			width: 100%;
-			height: 150px;
-			object-fit: cover;
-			border-radius: 10px 10px 0 0;
-		}
-		.producto h2 {
-			margin-top: 0;
-		}
-		.producto p {
-			margin-bottom: 20px;
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
-			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
-		}
-		.categorias button:hover {
-			background-color: #3e8e41;
-		}
-		.productos {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-		}
-		.producto {
-			margin: 20px;
-			padding: 20px;
-			border: 1px solid #ddd;
-			border-radius: 10px;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-		}
-		.producto img {
-			width: 100%;
-			height: 150px;
-			object-fit: cover;
-			border-radius: 10px 10px 0 0;
-		}
-		.producto h2 {
-			margin-top: 0;
-		}
-		.producto p {
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
-			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
-		}
-		.categorias button:hover {
-			background-color: #3e8e41;
-		}
-		.productos {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-		}
-		.producto {
-			margin: 20px;
-			padding: 20px;
-			border: 1px solid #ddd;
-			border-radius: 10px;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-		}
-		.producto img {
-			width: 100%;
-			height: 150px;
-			object-fit: cover;
-			border-radius: 10px 10px 0 0;
-		}
-		.producto h2 {
-			margin-top: 0
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
-			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
-		}
-		.categorias button:hover {
-			background-color: #3e8e41;
-		}
-		.productos {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-		}
-		.producto {
-			margin: 20px;
-			padding: 20px;
-			border: 1px solid #ddd;
-			border-radius: 10px;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-		}
-		.producto img {
-			width: 100%;
-			height: 150px;
-			object-fit: cover;
-			border-radius: 10px 10px 0 0;
-		}
-		.product
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
-			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
-		}
-		.categorias button:hover {
-			background-color: #3e8e41;
-		}
-		.productos {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-		}
-		.producto {
-			margin: 20px;
-			padding: 20px;
-			border: 1px solid #ddd;
-			border-radius: 10px;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-		}
-		.producto img {
-			width: 100%;
-			height: 150px;
-			object-fit: cover;
-			border-radius: 10px 10px
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
-			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
-		}
-		.categorias button:hover {
-			background-color: #3e8e41;
-		}
-		.productos {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-		}
-		.producto {
-			margin: 20px;
-			padding: 20px;
-			border: 1px solid #ddd;
-			border-radius: 10px;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-		}
-		.producto img {
-			width: 100%;
-			height: 150px;
-			object-fit: cover;
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
-			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
-		}
-		.categorias button:hover {
-			background-color: #3e8e41;
-		}
-		.productos {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-		}
-		.producto {
-			margin: 20px;
-			padding: 20px;
-			border: 1px solid #ddd;
-			border-radius: 10px;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-		}
-		.producto img {
-			width: 100%;
-			height:
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
-			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
-		}
-		.categorias button:hover {
-			background-color: #3e8e41;
-		}
-		.productos {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-		}
-		.producto {
-			margin: 20px;
-			padding: 20px;
-			border: 1px solid #ddd;
-			border-radius: 10px;
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-		}
-		.producto img {
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
-			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
-		}
-		.categorias button:hover {
-			background-color: #3e8e41;
-		}
-		.productos {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-		}
-		.producto {
-			margin: 20px;
-			padding: 20px;
-			border: 1px solid #ddd;
-			border-radius: 10px;
+			width: calc(33.33% - 20px);
 			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1
-		/* Estilos básicos */
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
+			background-color: #333;
 			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
+			padding: 20px;
+			text-align: center;
 		}
-		.categorias button:hover {
-			background-color: #3e8e41;
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
 		}
-		.productos {
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20px;
+		}
+		.services {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
 		}
-		.producto {
+		.service {
+			background-color: #f7f7f7;
+			padding: 20px;
 			margin: 20px;
-			padding: 20px;
-			border: 1px solid #ddd;
-			border-radius: 10px;
-			box-shadow: 0 0 10px rgba(0,
-		/* Estilos básicos */
+			width: calc(33.33% - 20px);
+			box-shadow: 0 0 10px rgba(0, 0, 0,
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
+			background-color: #333;
 			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
+			padding: 20px;
+			text-align: center;
 		}
-		.categorias button:hover {
-			background-color: #3e8e41;
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
 		}
-		.productos {
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20px;
+		}
+		.services {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
 		}
-		.producto {
+		.service {
+			background-color: #f7f7f7;
+			padding: 20px;
 			margin: 20px;
-			padding: 20px;
-			border: 1px solid #ddd;
-			border-radius: 10px;
-			box-shadow:
-		/* Estilos básicos */
+			width: calc(33.33% - 20px);
+			box-shadow: 0 0 10px rgba(0, 0, 0
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
+			background-color: #333;
 			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
+			padding: 20px;
+			text-align: center;
 		}
-		.categorias button:hover {
-			background-color: #3e8e41;
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
 		}
-		.productos {
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20px;
+		}
+		.services {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
 		}
-		.producto {
+		.service {
+			background-color: #f7f7f7;
+			padding: 20px;
 			margin: 20px;
-			padding: 20px;
-			border: 1px solid #ddd;
-			border-radius
-		/* Estilos básicos */
+			width: calc(33.33% - 20px);
+			box-shadow: 0 0 10px rgba(0, 0
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
+			background-color: #333;
 			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
+			padding: 20px;
+			text-align: center;
 		}
-		.categorias button:hover {
-			background-color: #3e8e41;
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
 		}
-		.productos {
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20px;
+		}
+		.services {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
 		}
-		.producto {
+		.service {
+			background-color: #f7f7f7;
+			padding: 20px;
 			margin: 20px;
-			padding: 20px;
-			border:
-		/* Estilos básicos */
+			width: calc(33.33% - 20px);
+			box-shadow: 0 0 10px rgba
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
+			background-color: #333;
 			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
+			padding: 20px;
+			text-align: center;
 		}
-		.categorias button:hover {
-			background-color: #3e8e41;
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
 		}
-		.productos {
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20px;
+		}
+		.services {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
 		}
-		.producto {
+		.service {
+			background-color: #f7f7f7;
+			padding: 20px;
 			margin: 20px;
-			padding: 20px;
-			border
-		/* Estilos básicos */
+			width: calc(33.33% - 20px);
+			box-shadow: 0 0 10
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
+			background-color: #333;
 			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
+			padding: 20px;
+			text-align: center;
 		}
-		.categorias button:hover {
-			background-color: #3e8e41;
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
 		}
-		.productos {
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20px;
+		}
+		.services {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
 		}
-		.producto {
+		.service {
+			background-color: #f7f7f7;
+			padding: 20px;
 			margin: 20px;
-			padding: 20
-		/* Estilos básicos */
+			width: calc(33.33% - 20px);
+			box-shadow: 0
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
+			background-color: #333;
 			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
+			padding: 20px;
+			text-align: center;
 		}
-		.categorias button:hover {
-			background-color: #3e8e41;
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
 		}
-		.productos {
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20px;
+		}
+		.services {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
 		}
-		.producto {
+		.service {
+			background-color: #f7f7f7;
+			padding: 20px;
 			margin: 20px;
-			padding:
-		/* Estilos básicos */
+			width: calc(33.33% - 20px);
+			box-shadow
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
+			background-color: #333;
 			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
+			padding: 20px;
+			text-align: center;
 		}
-		.categorias button:hover {
-			background-color: #3e8e41;
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
 		}
-		.productos {
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20px;
+		}
+		.services {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
 		}
-		.producto {
+		.service {
+			background-color: #f7f7f7;
+			padding: 20px;
+			margin: 20px;
+			width: calc(33.33% - 20px
+		body {
+			font-family: Arial, sans-serif;
+		}
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20px;
+		}
+		.services {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.service {
+			background-color: #f7f7f7;
+			padding: 20px;
+			margin: 20px;
+			width: calc(33.33% -
+		body {
+			font-family: Arial, sans-serif;
+		}
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20px;
+		}
+		.services {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.service {
+			background-color: #f7f7f7;
+			padding: 20px;
+			margin: 20px;
+			width: calc(33.
+		body {
+			font-family: Arial, sans-serif;
+		}
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20px;
+		}
+		.services {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.service {
+			background-color: #f7f7f7;
+			padding: 20px;
+			margin: 20px;
+			width: calc(33
+		body {
+			font-family: Arial, sans-serif;
+		}
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20px;
+		}
+		.services {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.service {
+			background-color: #f7f7f7;
+			padding: 20px;
+			margin: 20px;
+			width: calc(
+		body {
+			font-family: Arial, sans-serif;
+		}
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20px;
+		}
+		.services {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.service {
+			background-color: #f7f7f7;
+			padding: 20px;
+			margin: 20px;
+			width
+		body {
+			font-family: Arial, sans-serif;
+		}
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20px;
+		}
+		.services {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.service {
+			background-color: #f7f7f7;
+			padding: 20px;
+			margin: 20px;
+		body {
+			font-family: Arial, sans-serif;
+		}
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20px;
+		}
+		.services {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.service {
+			background-color: #f7f7f7;
+			padding: 20px;
 			margin:
-		/* Estilos básicos */
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
+			background-color: #333;
 			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
+			padding: 20px;
+			text-align: center;
 		}
-		.categorias button:hover {
-			background-color: #3e8e41;
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
 		}
-		.productos {
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20px;
+		}
+		.services {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
 		}
-		.producto {
-		/* Estilos básicos */
+		.service {
+			background-color: #f7f7f7;
+			padding: 20
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
+			background-color: #333;
 			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
+			padding: 20px;
+			text-align: center;
 		}
-		.categorias button:hover {
-			background-color: #3e8e41;
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
 		}
-		.productos {
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20px;
+		}
+		.services {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
 		}
-		.product
-		/* Estilos básicos */
+		.service {
+			background-color: #f7f7f7;
+			padding
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
+			background-color: #333;
 			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
+			padding: 20px;
+			text-align: center;
 		}
-		.categorias button:hover {
-			background-color: #3e8e41;
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
 		}
-		.productos {
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20px;
+		}
+		.services {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: center;
-		/* Estilos básicos */
+		}
+		.service {
+			background-color: #f7f7f
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
+			background-color: #333;
 			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
+			padding: 20px;
+			text-align: center;
 		}
-		.categorias button:hover {
-			background-color: #3e8e41;
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
 		}
-		.productos {
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20px;
+		}
+		.services {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.service {
+			background-color: #f7
+		body {
+			font-family: Arial, sans-serif;
+		}
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20px;
+		}
+		.services {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.service {
+			background-color: #f
+		body {
+			font-family: Arial, sans-serif;
+		}
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20px;
+		}
+		.services {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.service {
+			background-color: #
+		body {
+			font-family: Arial, sans-serif;
+		}
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20px;
+		}
+		.services {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.service {
+			background-color:
+		body {
+			font-family: Arial, sans-serif;
+		}
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20px;
+		}
+		.services {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.service {
+			background-color
+		body {
+			font-family: Arial, sans-serif;
+		}
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20px;
+		}
+		.services {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.service {
+			background
+		body {
+			font-family: Arial, sans-serif;
+		}
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20px;
+		}
+		.services {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.service
+		body {
+			font-family: Arial, sans-serif;
+		}
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20px;
+		}
+		.services {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		body {
+			font-family: Arial, sans-serif;
+		}
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20px;
+		}
+		.services {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		body {
+			font-family: Arial, sans-serif;
+		}
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20px;
+		}
+		.services {
 			display: flex;
 			flex-wrap: wrap;
 			justify-content:
-		/* Estilos básicos */
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
+			background-color: #333;
 			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
+			padding: 20px;
+			text-align: center;
 		}
-		.categorias button:hover {
-			background-color: #3e8e41;
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
 		}
-		.productos {
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20px;
+		}
+		.services {
 			display: flex;
 			flex-wrap: wrap;
-			justify-content
-		/* Estilos básicos */
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
+			background-color: #333;
 			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
+			padding: 20px;
+			text-align: center;
 		}
-		.categorias button:hover {
-			background-color: #3e8e41;
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
 		}
-		.productos {
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20px;
+		}
+		.services {
 			display: flex;
-			flex-wrap: wrap;
-			justify
-		/* Estilos básicos */
+			flex-wrap: wrap
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
+			background-color: #333;
 			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
+			padding: 20px;
+			text-align: center;
 		}
-		.categorias button:hover {
-			background-color: #3e8e41;
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
 		}
-		.productos {
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20px;
+		}
+		.services {
 			display: flex;
-			flex-wrap:
-		/* Estilos básicos */
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
+			background-color: #333;
 			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
+			padding: 20px;
+			text-align: center;
 		}
-		.categorias button:hover {
-			background-color: #3e8e41;
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
 		}
-		.productos {
-			display: flex;
-		/* Estilos básicos */
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20px;
+		}
+		.services {
+			display
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
+			background-color: #333;
 			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
+			padding: 20px;
+			text-align: center;
 		}
-		.categorias button:hover {
-			background-color: #3e8e41;
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
 		}
-		.productos {
-			display: flex
-		/* Estilos básicos */
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20px;
+		}
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
+			background-color: #333;
 			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
+			padding: 20px;
+			text-align: center;
 		}
-		.categorias button:hover {
-			background-color: #3e8e41;
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
 		}
-		.productos
-		/* Estilos básicos */
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20px;
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
+			background-color: #333;
 			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
+			padding: 20px;
+			text-align: center;
 		}
-		.categorias button:hover {
-			background-color: #3e8e41;
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
 		}
-		/* Estilos básicos */
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
+			background-color: #333;
 			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
-		}
-		.categorias button:hover {
-			background-color: #3e8e41;
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
 			padding: 20px;
 			text-align: center;
 		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
+		.navbar {
+			background-color: #444;
 			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
-		}
-		.categorias button:hover {
-			background-color: #3e8e
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
 			padding: 20px;
 			text-align: center;
 		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
+		.navbar a {
 			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
-		}
-		.categorias button:hover {
-			background-color: #
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
-			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
-		}
-		.categorias button:hover {
-			background
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
-			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
-		}
-		.categorias button:hover {
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
-			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
-		}
-		.c
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
-			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px;
-		}
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
-			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
-			margin: 0 10px
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
-			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
+			text-decoration: none;
 			margin: 0
-		/* Estilos básicos */
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
+			background-color: #333;
 			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer;
+			padding: 20px;
+			text-align: center;
+		}
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
 			margin
-		/* Estilos básicos */
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
+			background-color: #333;
 			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-			cursor: pointer
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
 			padding: 20px;
 			text-align: center;
 		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
+		.navbar {
+			background-color: #444;
 			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5px;
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
 			padding: 20px;
 			text-align: center;
 		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
+		.navbar a {
 			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius: 5
-		/* Estilos básicos */
+			text-decoration: none
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
+			background-color: #333;
 			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius:
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
 			padding: 20px;
 			text-align: center;
 		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
+		.navbar {
+			background-color: #444;
 			color: #fff;
-			border: none;
-			padding: 10px 20px;
-			border-radius
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
 			padding: 20px;
 			text-align: center;
 		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
+		.navbar a {
 			color: #fff;
-			border: none;
-			padding: 10px 20px;
-		/* Estilos básicos */
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
+			background-color: #333;
 			color: #fff;
-			border: none;
-			padding: 10px 20px
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
 			padding: 20px;
 			text-align: center;
 		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
+		.navbar {
+			background-color: #444;
 			color: #fff;
-			border: none;
-			padding: 10px 20
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
 			padding: 20px;
 			text-align: center;
 		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
-			color: #fff;
-			border: none;
-			padding: 10px
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
-			color: #fff;
-			border: none;
-			padding: 10
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
-			color: #fff;
-			border: none;
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
-			color: #fff;
-			border:
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
-			color: #fff;
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
+		.navbar a {
 			color: #fff
-		/* Estilos básicos */
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header {
-			background-color: #f0f0f0;
+			background-color: #333;
+			color: #fff;
 			padding: 20px;
 			text-align: center;
 		}
-		.categorias {
-			background-color: #f0f0f0;
+		.navbar {
+			background-color: #444;
+			color: #fff;
 			padding: 20px;
 			text-align: center;
 		}
-		.categorias button {
-			background-color: #4CAF50;
-			color: #
-		/* Estilos básicos */
+		.navbar a {
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header {
-			background-color: #f0f0f0;
+			background-color: #333;
+			color: #fff;
 			padding: 20px;
 			text-align: center;
 		}
-		.categorias {
-			background-color: #f0f0f0;
+		.navbar {
+			background-color: #444;
+			color: #fff;
 			padding: 20px;
 			text-align: center;
 		}
-		.categorias button {
-			background-color: #4CAF50;
-			color:
-		/* Estilos básicos */
+		.navbar a
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header {
-			background-color: #f0f0f0;
+			background-color: #333;
+			color: #fff;
 			padding: 20px;
 			text-align: center;
 		}
-		.categorias {
-			background-color: #f0f0f0;
+		.navbar {
+			background-color: #444;
+			color: #fff;
 			padding: 20px;
 			text-align: center;
 		}
-		.categorias button {
-			background-color: #4CAF50;
-			color
-		/* Estilos básicos */
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header {
-			background-color: #f0f0f0;
+			background-color: #333;
+			color: #fff;
 			padding: 20px;
 			text-align: center;
 		}
-		.categorias {
-			background-color: #f0f0f0;
+		.navbar {
+			background-color: #444;
+			color: #fff;
 			padding: 20px;
 			text-align: center;
-		}
-		.categorias button {
-			background-color: #4CAF50;
-		/* Estilos básicos */
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header {
-			background-color: #f0f0f0;
+			background-color: #333;
+			color: #fff;
 			padding: 20px;
 			text-align: center;
 		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #4
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color: #
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color:
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-			background-color
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias button {
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.c
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
+		.navbar {
+			background-color: #444;
+			color: #fff;
 			padding: 20px;
 			text-align: center
-		/* Estilos básicos */
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header {
-			background-color: #f0f0f0;
+			background-color: #333;
+			color: #fff;
 			padding: 20px;
 			text-align: center;
 		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20px;
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding: 20
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0;
-			padding
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f0f0
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #f0f
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-			background-color: #
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.categorias {
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		.c
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center;
-		}
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
-			padding: 20px;
-			text-align: center
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			background-color: #f0f0f0;
+		.navbar {
+			background-color: #444;
+			color: #fff;
 			padding: 20px;
 			text
-		/* Estilos básicos */
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header {
-			background-color: #f0f0f0;
-			padding: 20px
-		/* Estilos básicos */
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header {
-			background-color: #f0f0f0;
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.navbar {
+			background-color: #444;
+			color: #fff;
 			padding
-		/* Estilos básicos */
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header {
-			background-color: #f0f0f0
-		/* Estilos básicos */
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.navbar {
+			background-color: #444;
+			color: #fff
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header {
-			background-color: #f0f
-		/* Estilos básicos */
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.navbar {
+			background-color: #444;
+			color
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header {
-			background-color: #
-		/* Estilos básicos */
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.navbar {
+			background-color: #444
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
+		}
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.navbar {
+			background
+		body {
+			font-family: Arial, sans-serif;
+		}
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.nav
+		body {
+			font-family: Arial, sans-serif;
+		}
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		body {
+			font-family: Arial, sans-serif;
+		}
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		body {
+			font-family: Arial, sans-serif;
+		}
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align
+		body {
+			font-family: Arial, sans-serif;
+		}
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text
+		body {
+			font-family: Arial, sans-serif;
+		}
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+		body {
+			font-family: Arial, sans-serif;
+		}
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px
+		body {
+			font-family: Arial, sans-serif;
+		}
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding:
+		body {
+			font-family: Arial, sans-serif;
+		}
+		.header {
+			background-color: #333;
+			color: #fff;
+		body {
+			font-family: Arial, sans-serif;
+		}
+		.header {
+			background-color: #333;
+			color:
+		body {
+			font-family: Arial, sans-serif;
+		}
+		.header {
+			background-color: #333;
+		body {
+			font-family: Arial, sans-serif;
+		}
+		.header {
+			background-color:
+		body {
+			font-family: Arial, sans-serif;
+		}
+		.header {
+			background-color
+		body {
+			font-family: Arial, sans-serif;
 		}
 		.header {
 			background
-		/* Estilos básicos */
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header {
-		/* Estilos básicos */
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
 		.header
-		/* Estilos básicos */
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
 		}
-		/* Estilos básicos */
 		body {
 			font-family: Arial, sans-serif;
-			margin: 0;
-			padding: 0;
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-			padding:
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin: 0;
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-			margin:
-		/* Estilos básicos */
-		body {
-			font-family: Arial, sans-serif;
-		/* Estilos básicos */
 		body {
 			font-family: Arial,
-		/* Estilos básicos */
-		body {
-			font-family:
-		/* Estilos básicos */
 		body {
 			font-family
-		/* Estilos básicos */
-		body</style>
+		body {
+			font-family: Arial, sans-serif;
+		}
+		.header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.navbar {
+			background-color: #444;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		.navbar a {
+			color: #fff;
+			text-decoration: none;
+			margin: 0 20px;
+		}
+		.services {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		.service {
+			background-color: #f7f7f7;
+			padding: 20px;
+			margin: 20px;
+			width: calc(33.33% - 20px);
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		.service h2 {
+			margin-top: 0;
+		}
+	</style>
 </head>
 <body>
 	<header class="header">
-		<h1>Tienda de Productos</h1>
+		<h1>Taxi Service</h1>
 	</header>
-	<section class="categorias">
-		<button id="todos">Todos</button>
-		<button id="electronica">Electrónica</button>
-		<button id="moda">Moda</button>
-		<button id="hogar">Hogar</button>
+	<nav class="navbar">
+		<a href="#categoria1">Categoría 1</a>
+		<a href="#categoria2">Categoría 2</a>
+		<a href="#categoria3">Categoría 3</a>
+	</nav>
+	<section class="services">
+		<article class="service" id="categoria1">
+			<h2>Servicio 1</h2>
+			<p>Descripción del servicio 1</p>
+			<p>Precio: S/ 20.00</p>
+		</article>
+		<article class="service" id="categoria1">
+			<h2>Servicio 2</h2>
+			<p>Descripción del servicio 2</p>
+			<p>Precio: S/ 30.00</p>
+		</article>
+		<article class="service" id="categoria2">
+			<h2>Servicio 3</h2>
+			<p>Descripción del servicio 3</p>
+			<p>Precio: S/ 40.00</p>
+		</article>
+		<article class="service" id="categoria2">
+			<h2>Servicio 4</h2>
+			<p>Descripción del servicio 4</p>
+			<p>Precio: S/ 50.00</p>
+		</article>
+		<article class="service" id="categoria3">
+			<h2>Servicio 5</h2>
+			<p>Descripción del servicio 5</p>
+			<p>Precio: S/ 60.00</p>
+		</article>
+		<article class="service" id="categoria3">
+			<h2>Servicio 6</h2>
+			<p>Descripción del servicio 6</p>
+			<p>Precio: S/ 70.00</p>
+		</article>
 	</section>
-	<main class="productos">
-		<!-- Producto 1 -->
-		<div class="producto electronica">
-			<img src="imagen1.jpg" alt="Producto 1">
-			<h2>Producto 1</h2>
-			<p>Descripción del producto 1</p>
-			<p>Precio: S/ 100.00</p>
-			<div class="botones">
-				<button>Comprar</button>
-				<button>Agregar al carrito</button>
-			</div>
-		</div>
-		<!-- Producto 2 -->
-		<div class="producto moda">
-			<img src="imagen2.jpg" alt="Producto 2">
-			<h2>Producto 2</h2>
-			<p>Descripción del producto 2</p>
-			<p>Precio: S/ 200.00</p>
-			<div class="botones">
-				<button>Comprar</button>
-				<button>Agregar al carrito</button>
-			</div>
-		</div>
-		<!-- Producto 3 -->
-		<div class="producto hogar">
-			<img src="imagen3.jpg" alt="Producto 3">
-			<h2>Producto 3</h2>
-			<p>Descripción del producto 3</p>
-			<p>Precio: S/ 300.00</p>
-			<div class="botones">
-				<button>Comprar</button>
-				<button>Agregar al carrito</button>
-			</div>
-		</div>
-		<!-- Producto 4 -->
-		<div class="producto electronica">
-			<img src="imagen4.jpg" alt="Producto 4">
-			<h2>Producto 4</h2>
-			<p>Descripción del producto 4</p>
-			<p>Precio: S/ 400.00</p>
-			<div class="botones">
-				<button>Comprar</button>
-				<button>Agregar al carrito</button>
-			</div>
-		<!-- Producto 5 -->
-		<div class="producto moda">
-			<img src="imagen5.jpg" alt="Producto 5">
-			<h2>Producto 5</h2>
-			<p>Descripción del producto 5</p>
-			<p>Precio: S/ 500.00</p>
-			<div class="botones">
-				<button>Comprar</button>
-				<button>Agregar al carrito</button>
-			</div>
-		</div>
-		<!-- Producto 6 -->
-		<div class="producto hogar">
-			<img src="imagen6.jpg" alt="Producto 6">
-			<h2>Producto 6</h2>
-			<p>Descripción del producto 6</p>
-			<p>Precio: S/ 600.00</p>
-			<div class="botones">
-				<button>Comprar</button>
-				<button>Agregar al carrito</button>
-			</div>
-		</div>
-	</main>
-
-	<script>
-		// Mostrar todos los productos al iniciar
-		document.getElementById('todos').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				producto.style.display = 'block';
-			});
-		});
-
-		// Mostrar solo los productos de electrónica
-		document.getElementById('electronica').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				if (producto.classList.contains('electronica')) {
-					producto.style.display = 'block';
-				} else {
-					producto.style.display = 'none';
-				}
-			});
-		});
-
-		// Mostrar solo los productos de moda
-		document.getElementById('moda').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				if (producto.classList.contains('moda')) {
-					producto.style.display = 'block';
-				} else {
-					producto.style.display = 'none';
-				}
-			});
-		});
-
-		// Mostrar solo los productos de hogar
-		document.getElementById('hogar').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				if (producto.classList.contains('hogar')) {
-					producto.style.display = 'block';
-				} else {
-					producto.style.display = 'none';
-				}
-			});
-		});
-	
-		// Mostrar todos los productos al iniciar
-		document.getElementById('todos').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				producto.style.display = 'block';
-			});
-		});
-
-		// Mostrar solo los productos de electrónica
-		document.getElementById('electronica').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				if (producto.classList.contains('electronica')) {
-					producto.style.display = 'block';
-				} else {
-					producto.style.display = 'none';
-				}
-			});
-		});
-
-		// Mostrar solo los productos de moda
-		document.getElementById('moda').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				if (producto.classList.contains('moda')) {
-					producto.style.display = 'block';
-				} else {
-					producto.style.display = 'none';
-				}
-			});
-		});
-
-		// Mostrar solo los productos de hogar
-		document.getElementById('hogar').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				if (producto.classList.contains('hogar')) {
-					producto.style.display = 'block';
-				} else {
-					producto.style.display = 'none';
-				}
-		// Mostrar todos los productos al iniciar
-		document.getElementById('todos').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				producto.style.display = 'block';
-			});
-		});
-
-		// Mostrar solo los productos de electrónica
-		document.getElementById('electronica').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				if (producto.classList.contains('electronica')) {
-					producto.style.display = 'block';
-				} else {
-					producto.style.display = 'none';
-				}
-			});
-		});
-
-		// Mostrar solo los productos de moda
-		document.getElementById('moda').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				if (producto.classList.contains('moda')) {
-					producto.style.display = 'block';
-				} else {
-					producto.style.display = 'none';
-				}
-			});
-		});
-
-		// Mostrar solo los productos de hogar
-		document.getElementById('hogar').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				if (producto.classList.contains('hogar')) {
-					producto.style.display = 'block';
-				} else {
-					producto.style
-		// Mostrar todos los productos al iniciar
-		document.getElementById('todos').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				producto.style.display = 'block';
-			});
-		});
-
-		// Mostrar solo los productos de electrónica
-		document.getElementById('electronica').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				if (producto.classList.contains('electronica')) {
-					producto.style.display = 'block';
-				} else {
-					producto.style.display = 'none';
-				}
-			});
-		});
-
-		// Mostrar solo los productos de moda
-		document.getElementById('moda').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				if (producto.classList.contains('moda')) {
-					producto.style.display = 'block';
-				} else {
-					producto.style.display = 'none';
-				}
-			});
-		});
-
-		// Mostrar solo los productos de hogar
-		document.getElementById('hogar').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				if (producto.classList.contains('hogar')) {
-					producto.style.display = 'block
-		// Mostrar todos los productos al iniciar
-		document.getElementById('todos').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				producto.style.display = 'block';
-			});
-		});
-
-		// Mostrar solo los productos de electrónica
-		document.getElementById('electronica').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				if (producto.classList.contains('electronica')) {
-					producto.style.display = 'block';
-				} else {
-					producto.style.display = 'none';
-				}
-			});
-		});
-
-		// Mostrar solo los productos de moda
-		document.getElementById('moda').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				if (producto.classList.contains('moda')) {
-					producto.style.display = 'block';
-				} else {
-					producto.style.display = 'none';
-				}
-			});
-		});
-
-		// Mostrar solo los productos de hogar
-		document.getElementById('hogar').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				if (producto.classList.contains('hogar
-		// Mostrar todos los productos al iniciar
-		document.getElementById('todos').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				producto.style.display = 'block';
-			});
-		});
-
-		// Mostrar solo los productos de electrónica
-		document.getElementById('electronica').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				if (producto.classList.contains('electronica')) {
-					producto.style.display = 'block';
-				} else {
-					producto.style.display = 'none';
-				}
-			});
-		});
-
-		// Mostrar solo los productos de moda
-		document.getElementById('moda').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				if (producto.classList.contains('moda')) {
-					producto.style.display = 'block';
-				} else {
-					producto.style.display = 'none';
-				}
-			});
-		});
-
-		// Mostrar solo los productos de hogar
-		document.getElementById('hogar').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto)
-		// Mostrar todos los productos al iniciar
-		document.getElementById('todos').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				producto.style.display = 'block';
-			});
-		});
-
-		// Mostrar solo los productos de electrónica
-		document.getElementById('electronica').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				if (producto.classList.contains('electronica')) {
-					producto.style.display = 'block';
-				} else {
-					producto.style.display = 'none';
-				}
-			});
-		});
-
-		// Mostrar solo los productos de moda
-		document.getElementById('moda').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				if (producto.classList.contains('moda')) {
-					producto.style.display = 'block';
-				} else {
-					producto.style.display = 'none';
-				}
-			});
-		});
-
-		// Mostrar solo los productos de hogar
-		document.getElementById('hogar').addEventListener('click', function() {
-		// Mostrar todos los productos al iniciar
-		document.getElementById('todos').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				producto.style.display = 'block';
-			});
-		});
-
-		// Mostrar solo los productos de electrónica
-		document.getElementById('electronica').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				if (producto.classList.contains('electronica')) {
-					producto.style.display = 'block';
-				} else {
-					producto.style.display = 'none';
-				}
-			});
-		});
-
-		// Mostrar solo los productos de moda
-		document.getElementById('moda').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				if (producto.classList.contains('moda')) {
-					producto.style.display = 'block';
-				} else {
-					producto.style.display = 'none';
-				}
-			});
-		});
-
-		// Mostrar solo los productos de hogar
-		document.getElementById('hog
-		// Mostrar todos los productos al iniciar
-		document.getElementById('todos').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				producto.style.display = 'block';
-			});
-		});
-
-		// Mostrar solo los productos de electrónica
-		document.getElementById('electronica').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				if (producto.classList.contains('electronica')) {
-					producto.style.display = 'block';
-				} else {
-					producto.style.display = 'none';
-				}
-			});
-		});
-
-		// Mostrar solo los productos de moda
-		document.getElementById('moda').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				if (producto.classList.contains('moda')) {
-					producto.style.display = 'block';
-				} else {
-					producto.style.display = 'none';
-				}
-			});
-		});
-
-		// Mostrar solo los
-		// Mostrar todos los productos al iniciar
-		document.getElementById('todos').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				producto.style.display = 'block';
-			});
-		});
-
-		// Mostrar solo los productos de electrónica
-		document.getElementById('electronica').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				if (producto.classList.contains('electronica')) {
-					producto.style.display = 'block';
-				} else {
-					producto.style.display = 'none';
-				}
-			});
-		});
-
-		// Mostrar solo los productos de moda
-		document.getElementById('moda').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				if (producto.classList.contains('moda')) {
-					producto.style.display = 'block';
-				} else {
-					producto.style.display = 'none';
-				}
-			});
-		// Mostrar todos los productos al iniciar
-		document.getElementById('todos').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				producto.style.display = 'block';
-			});
-		});
-
-		// Mostrar solo los productos de electrónica
-		document.getElementById('electronica').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				if (producto.classList.contains('electronica')) {
-					producto.style.display = 'block';
-				} else {
-					producto.style.display = 'none';
-				}
-			});
-		});
-
-		// Mostrar solo los productos de moda
-		document.getElementById('moda').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				if (producto.classList.contains('moda')) {
-					producto.style.display = 'block';
-				} else {
-					producto.style.display
-		// Mostrar todos los productos al iniciar
-		document.getElementById('todos').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				producto.style.display = 'block';
-			});
-		});
-
-		// Mostrar solo los productos de electrónica
-		document.getElementById('electronica').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				if (producto.classList.contains('electronica')) {
-					producto.style.display = 'block';
-				} else {
-					producto.style.display = 'none';
-				}
-			});
-		});
-
-		// Mostrar solo los productos de moda
-		document.getElementById('moda').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				if (producto.classList.contains('moda')) {
-					producto.style.display = 'block';
-		// Mostrar todos los productos al iniciar
-		document.getElementById('todos').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				producto.style.display = 'block';
-			});
-		});
-
-		// Mostrar solo los productos de electrónica
-		document.getElementById('electronica').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				if (producto.classList.contains('electronica')) {
-					producto.style.display = 'block';
-				} else {
-					producto.style.display = 'none';
-				}
-			});
-		});
-
-		// Mostrar solo los productos de moda
-		document.getElementById('moda').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				if (producto.classList.contains('moda'))
-		// Mostrar todos los productos al iniciar
-		document.getElementById('todos').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				producto.style.display = 'block';
-			});
-		});
-
-		// Mostrar solo los productos de electrónica
-		document.getElementById('electronica').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				if (producto.classList.contains('electronica')) {
-					producto.style.display = 'block';
-				} else {
-					producto.style.display = 'none';
-				}
-			});
-		});
-
-		// Mostrar solo los productos de moda
-		document.getElementById('moda').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-		// Mostrar todos los productos al iniciar
-		document.getElementById('todos').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				producto.style.display = 'block';
-			});
-		});
-
-		// Mostrar solo los productos de electrónica
-		document.getElementById('electronica').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				if (producto.classList.contains('electronica')) {
-					producto.style.display = 'block';
-				} else {
-					producto.style.display = 'none';
-				}
-			});
-		});
-
-		// Mostrar solo los productos de moda
-		document.getElementById('moda').addEventListener('click', function() {
-			document
-		// Mostrar todos los productos al iniciar
-		document.getElementById('todos').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				producto.style.display = 'block';
-			});
-		});
-
-		// Mostrar solo los productos de electrónica
-		document.getElementById('electronica').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				if (producto.classList.contains('electronica')) {
-					producto.style.display = 'block';
-				} else {
-					producto.style.display = 'none';
-				}
-			});
-		});
-
-		// Mostrar solo los productos de moda
-		document.getElementById('moda
-		// Mostrar todos los productos al iniciar
-		document.getElementById('todos').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				producto.style.display = 'block';
-			});
-		});
-
-		// Mostrar solo los productos de electrónica
-		document.getElementById('electronica').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				if (producto.classList.contains('electronica')) {
-					producto.style.display = 'block';
-				} else {
-					producto.style.display = 'none';
-				}
-			});
-		});
-
-		// Mostrar solo los
-		// Mostrar todos los productos al iniciar
-		document.getElementById('todos').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				producto.style.display = 'block';
-			});
-		});
-
-		// Mostrar solo los productos de electrónica
-		document.getElementById('electronica').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				if (producto.classList.contains('electronica')) {
-					producto.style.display = 'block';
-				} else {
-					producto.style.display = 'none';
-				}
-			});
-		// Mostrar todos los productos al iniciar
-		document.getElementById('todos').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				producto.style.display = 'block';
-			});
-		});
-
-		// Mostrar solo los productos de electrónica
-		document.getElementById('electronica').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				if (producto.classList.contains('electronica')) {
-					producto.style.display = 'block';
-				} else {
-					producto.style.display
-		// Mostrar todos los productos al iniciar
-		document.getElementById('todos').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				producto.style.display = 'block';
-			});
-		});
-
-		// Mostrar solo los productos de electrónica
-		document.getElementById('electronica').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				if (producto.classList.contains('electronica')) {
-					producto.style.display = 'block';
-		// Mostrar todos los productos al iniciar
-		document.getElementById('todos').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				producto.style.display = 'block';
-			});
-		});
-
-		// Mostrar solo los productos de electrónica
-		document.getElementById('electronica').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				if (producto.classList.contains('electronica'))
-		// Mostrar todos los productos al iniciar
-		document.getElementById('todos').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				producto.style.display = 'block';
-			});
-		});
-
-		// Mostrar solo los productos de electrónica
-		document.getElementById('electronica').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-		// Mostrar todos los productos al iniciar
-		document.getElementById('todos').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				producto.style.display = 'block';
-			});
-		});
-
-		// Mostrar solo los productos de electrónica
-		document.getElementById('electronica').addEventListener('click', function() {
-			document
-		// Mostrar todos los productos al iniciar
-		document.getElementById('todos').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				producto.style.display = 'block';
-			});
-		});
-
-		// Mostrar solo los productos de electrónica
-		document.getElementById('electronica
-		// Mostrar todos los productos al iniciar
-		document.getElementById('todos').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				producto.style.display = 'block';
-			});
-		});
-
-		// Mostrar solo los productos
-		// Mostrar todos los productos al iniciar
-		document.getElementById('todos').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				producto.style.display = 'block';
-			});
-		});
-
-		// Mostrar
-		// Mostrar todos los productos al iniciar
-		document.getElementById('todos').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				producto.style.display = 'block';
-			});
-		});
-		// Mostrar todos los productos al iniciar
-		document.getElementById('todos').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				producto.style.display = 'block';
-			});
-		// Mostrar todos los productos al iniciar
-		document.getElementById('todos').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				producto.style.display = '
-		// Mostrar todos los productos al iniciar
-		document.getElementById('todos').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto) {
-				producto
-		// Mostrar todos los productos al iniciar
-		document.getElementById('todos').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function(producto)
-		// Mostrar todos los productos al iniciar
-		document.getElementById('todos').addEventListener('click', function() {
-			document.querySelectorAll('.producto').forEach(function
-		// Mostrar todos los productos al iniciar
-		document.getElementById('todos').addEventListener('click', function() {
-			document.querySelectorAll
-		// Mostrar todos los productos al iniciar
-		document.getElementById('todos').addEventListener('click', function() {
-		// Mostrar todos los productos al iniciar
-		document.getElementById('todos').addEventListener('click', function
-		// Mostrar todos los productos al iniciar
-		document.getElementById('todos').
-		// Mostrar todos los productos al iniciar
-		document.getElementById</script>
 </body>
 </html>
